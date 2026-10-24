@@ -1,20 +1,29 @@
-/*Asterisk rules to overide broser settings*/
+/* Asterisk rules to overide broser settings */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+/* Generic project styles */
+    color: #3a3a3a;
+}
 
-
-/*Header*/
+/* Header */
 header {
     background-color: lightcoral;
 }
 
-/*Main Content*/
+/* Main Content */
 main {
     background-color: lightblue;
+    /* Make main box take up the space so the footer remains bottom of the page */
+    flex: 1 0 auto
 }
 
 /*Footer*/
